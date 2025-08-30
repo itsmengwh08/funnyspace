@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "2025"
+      VERSION: "https://dl.bobpony.com/windows/server/2025/en-us_windows_server_2025_updated_april_2025_x64_dvd_ea86301d.iso"
       USERNAME: "UntrustedInstaller"
       PASSWORD: "windows"
       RAM_SIZE: "10G"
@@ -12,7 +12,6 @@ services:
       DISK2_SIZE: "32G"
       REGION: "vi-VN"
       KEYBOARD: "en-US"
-      VERSION: "https://dl.bobpony.com/windows/server/2025/en-us_windows_server_2025_updated_april_2025_x64_dvd_ea86301d.iso"
     devices:
       - /dev/kvm
       - /dev/net/tun
